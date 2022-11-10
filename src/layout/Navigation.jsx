@@ -20,11 +20,11 @@ export default function Navigation() {
   return (
     <div className="bg-white shadow-lg flex items-center">
       <div className="container">
-        <div className="row py-6 justify-between">
-          <div className="col-6">
+        <div className="flex py-6 justify-between">
+          <div className="w-1/2">
             <p className="font-bold text-gray-800 text-2xl">Astro Starter</p>
           </div>
-          <div className="col-2 md:hidden block">
+          <div className="w-10/12 md:hidden block">
             <label htmlFor="menu-toggle" className="cursor-pointer">
               {/* SVG not wroking */}
               <SVG
@@ -36,7 +36,7 @@ export default function Navigation() {
           </div>
 
           <div
-            className={`md:col-6 md:flex justify-center md:justify-end ${
+            className={`md:w-1/2 md:flex justify-center md:justify-end ${
               menu ? ' flex' : ' hidden'
             }`}
           >
