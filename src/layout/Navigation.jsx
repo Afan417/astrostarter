@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import SVG from 'react-inlinesvg'
 
 const NavItem = ({ children, href }) => {
   return (
@@ -26,10 +25,11 @@ export default function Navigation() {
           </div>
           <div className="w-auto md:hidden block">
             <label htmlFor="menu-toggle" className="cursor-pointer">
-              <SVG
+              <img
                 src="../svg/menu.svg"
-                className="fill-current text-black w-6 h-6"
+                alt="Hamburger"
                 onClick={() => setMenu(!menu)}
+                className="fill-current text-black w-6 h-6"
               />
             </label>
           </div>
